@@ -1,6 +1,6 @@
 {
   "name": "@everymundo/json-utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "JSON Utilities such as safe JSON parser and pretty JSON stringifier.",
   "main": "index.js",
   "scripts": {
