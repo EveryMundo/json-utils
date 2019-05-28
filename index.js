@@ -1,16 +1,16 @@
-'use strict';
+'use strict'
 
 const parseJson = (json) => {
   try {
-    return JSON.parse(json);
+    return JSON.parse(json)
   } catch (e) {
-    return e;
+    return e
   }
-};
+}
 
-const prettyJson = (obj, spaces = '  ') => JSON.stringify(obj, null, spaces);
+const prettyJson = (obj, spaces = '  ') => JSON.stringify(obj, null, spaces)
 
 module.exports = {
   parseJson,
-  prettyJson,
-};
+  prettyJson
+}
