@@ -6,8 +6,8 @@
   "scripts": {
     "cover": "LOG_LEVEL=trace nyc -x test --reporter=lcov --reporter=text mocha test --recursive",
     "check-coverage": "nyc check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
-    "check-lint": "standard *.js lib/*.js spec/*.js spec/lib/*.js",
-    "fix-lint": "standard --fix *.js lib/*.js test/*.js",
+    "check-lint": "standard --env=mocha *.js lib/*.js spec/*.js spec/lib/*.js",
+    "fix-lint": "standard --env=mocha --fix *.js lib/*.js test/*.js",
     "test": "mocha $@"
   },
   "config": {
@@ -31,8 +31,8 @@
   "homepage": "https://github.com/EveryMundo/json-utils#readme",
   "devDependencies": {
     "chai": "^4.2.0",
-    "mocha": "^6.1.4",
-    "nyc": "^14.1.1",
-    "standard": "^12.0.1"
+    "mocha": "^7.1.1",
+    "nyc": "^15.0.0",
+    "standard": "^14.3.3"
   }
 }
