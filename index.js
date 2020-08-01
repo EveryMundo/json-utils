@@ -1,8 +1,8 @@
 'use strict'
 
-const parseJson = (json) => {
+const parseJson = (json, customFunction) => {
   try {
-    return JSON.parse(json)
+    return JSON.parse(json, customFunction)
   } catch (e) {
     return e
   }
